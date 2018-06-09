@@ -69,6 +69,11 @@ public class Main {
             case 5:
                 System.out.println("sexta");
                 break;
+            case 6:
+                System.out
+                        .println("sabado");
+                break;
+                
         }
         Scanner scanner = new Scanner(System.in);
         System.out.println("digite um numero");
