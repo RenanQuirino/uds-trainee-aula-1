@@ -73,12 +73,20 @@ public class Main {
                 System.out
                         .println("sabado");
                 break;
-                
+
         }
         Scanner scanner = new Scanner(System.in);
         System.out.println("digite um numero");
         Integer entrada = scanner.nextInt();
 
         System.out.println(converterDecimalParaRomano(entrada));
+    }
+for (var i = 0; i <=10; i++) {
+    }
+    int i = 1;
+    int x = 2;
+    while(x < 20) {
+        x = x + (x * i);
+
     }
 }
