@@ -80,13 +80,21 @@ public class Main {
         Integer entrada = scanner.nextInt();
 
         System.out.println(converterDecimalParaRomano(entrada));
-    }
-for (var i = 0; i <=10; i++) {
-    }
-    int i = 1;
-    int x = 2;
-    while(x < 20) {
-        x = x + (x * i);
 
+        for ( int i = 1; i <= 10; i++) {
+            String valorConvertido = converterDecimalParaRomano(i);
+            System.out.println(valorConvertido);
+
+        }
+        int i = 1;
+        while (i <= 10) {
+            String valorConvertido = converterDecimalParaRomano(i);
+            System.out.println(valorConvertido);
+            i++;
+
+        }
+
+        
     }
+
 }
