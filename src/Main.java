@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.function.Function;
 public class Main {
-    public static String converterDecimalParaRomano (int numero){
+    public static String converterDecimalParaRomano(int numero) {
         switch (numero) {
             case 1:
                 return "I";
@@ -24,14 +24,13 @@ public class Main {
             case 10:
                 return "X";
 
-                default:
-                    return "numero invalido digite um numero de 1 a 10";
+            default:
+                return "numero invalido digite um numero de 1 a 10";
 
         }
     }
 
-    public static void main(String[]args) {
-
+    public static void main(String[] args) {
 
 
         System.out.println("Hello World");
@@ -39,8 +38,8 @@ public class Main {
         Integer idade = 22;
         Boolean sexoFeminino = false;
         Double peso = 95.2;
-        System.out.println(nome+" "+idade);
-        System.out.println("Ola, meu nome é " +nome+" tenho "+idade+" anos de idade meu peso é "+peso+" ");
+        System.out.println(nome + " " + idade);
+        System.out.println("Ola, meu nome é " + nome + " tenho " + idade + " anos de idade meu peso é " + peso + " ");
         if (idade <= 18)
             System.out.println("Novinho(a)");
         else if (idade >= 18 && idade <= 30)
@@ -50,7 +49,7 @@ public class Main {
 
         int diaSemana = 0;
 
-        switch(diaSemana) {
+        switch (diaSemana) {
             case 0:
                 System.out.println("Domingo");
                 break;
@@ -81,7 +80,7 @@ public class Main {
 
         System.out.println(converterDecimalParaRomano(entrada));
 
-        for ( int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= 10; i++) {
             String valorConvertido = converterDecimalParaRomano(i);
             System.out.println(valorConvertido);
 
@@ -94,7 +93,45 @@ public class Main {
 
         }
 
-        
+        Double saldo = 1500.0;
+        System.out.println(saldo);
+
+        System.out.println("Menu");
+        System.out.println("[1] - Pistolas");
+        System.out.println("[2] - Metralhadoras");
+        System.out.println("[3] - Rifles");
+        System.out.println("[4} - Submetralhadoras");
+        System.out.println("[5] - Arma Branca");
+        int menu = scanner.nextInt();
+        switch (menu) {
+            case 1:
+                System.out.println("[1] - Glock          $100");
+                System.out.println("[2] - Desert Eagle   $150");
+                System.out.println("[3} - Berreta        $200");
+                break;
+            case 2:
+                System.out.println("[1] - M416           $350");
+                System.out.println("[2] - AKM            $250");
+                System.out.println("[3] - AUG            $500");
+                break;
+            case 3:
+                System.out.println("[1] - AWM            $700");
+                System.out.println("[2] - Kar98          $550");
+                System.out.println("[3] - Winchester     $400");
+                break;
+            case 4:
+                System.out.println("[1] - Ump            $200");
+                System.out.println("[2] - Uzi            $100");
+                System.out.println("[3] - Vector         $150");
+                break;
+            case 5:
+                System.out.println("[1] - Faca           $50");
+                System.out.println("[2] - Pé de cabra    $20");
+                System.out.println("[3] - Espada         $100");
+                break;
+
+        }
+
     }
 
 }
